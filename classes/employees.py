@@ -20,7 +20,7 @@ class Company(object):
 
     def hire_employee(self, employee):
         self.employees.append(employee)
-        
+
     def get_employees(self):
         return self.employees
 
@@ -38,7 +38,6 @@ eventbrite.hire_employee(Patrick)
 eventbrite.hire_employee(Jessica)
 
 print(eventbrite.company_name)
-print(eventbrite.get_company_name)
 
 for employees in eventbrite.employees:
-    print(employees.name)
+    print(employees.name, employees.job, employees.start)
