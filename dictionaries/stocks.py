@@ -20,7 +20,7 @@ for purchase in purchase_history:
         stock_names.append(purchase[0])
         purchase_total[purchase[0]] = purchase[1]
     else:
-        purchase_total[purchase[0]] = purchase_total[purchase[0]] + purchase[1]
+        purchase_total[purchase[0]] += purchase[1]
 
 print(purchase_history)
 print(purchase_total)
