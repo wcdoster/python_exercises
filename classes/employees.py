@@ -14,7 +14,7 @@ class Company(object):
         self.company_name = company_name
         self.date_founded = date_founded
         self.employees = []
-         
+        
 
     def get_company_name(self):
         """Returns the name of the company"""

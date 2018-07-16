@@ -12,12 +12,10 @@ for purchase in purchases:
     item = (stock_dict[purchase[0]], purchase[1]*purchase[3])
     purchase_history.append(item)
 
-stock_names = []
 purchase_total = {}
 
 for purchase in purchase_history:
-    if purchase[0] not in stock_names:
-        stock_names.append(purchase[0])
+    if purchase[0] not in purchase_total:
         purchase_total[purchase[0]] = purchase[1]
     else:
         purchase_total[purchase[0]] += purchase[1]
